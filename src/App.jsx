@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'lucide-react';
+// import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
 
 export default function App() {
   return (
@@ -15,8 +17,36 @@ export default function App() {
           <h2 className="text-xl font-semibold mb-4">In pairs, prepare a silica plate as follows:</h2>
           <ol className="space-y-4 list-decimal list-inside">
             <li className="pl-6 -indent-6">
-              Using a <span className="text-yellow-400 hover:underline cursor-pointer">pencil</span>, draw a line 1cm from the bottom of each plate. When marking the plate, it is very important to take care not to press too hard so as to scratch or damage the <span className="text-yellow-400 hover:underline cursor-pointer">silica</span> surface of the plate.
+            <Tooltip anchorSelect=".my-pencil-element" place="bottom" clickable>
+              <div>
+                <a href='#'>Pencil Images</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#' target='_blank'>Explaination</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#' target='_blank'>Issues</a>
+              </div>
+            </Tooltip>
+              Using a <a className="my-pencil-element text-yellow-400 hover:underline cursor-pointer">pencil</a>, draw a line 1cm from the bottom of each plate. When marking the plate, it is very important to take care not to press too hard so as to scratch or damage the <a className="my-anchor-element text-yellow-400 hover:underline cursor-pointer">silica</a> surface of the plate.
             </li>
+            <Tooltip anchorSelect=".my-anchor-element" place="top" clickable>
+              <div>
+                <a href='#'>Images</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#' target='_blank'>Explaination</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#' target='_blank'>Issues</a>
+              </div>
+            </Tooltip>
+
+
             <li className="pl-6 -indent-6">
               Mark on the <span className="text-yellow-400 hover:underline cursor-pointer">line</span> across at least 0.5cm from the side of the plate and then at equal spacing ~1cm apart the location of each of the four solutions. Use letters to denote each sample and write these onto the plate underneath the line/crosses.
             </li>
