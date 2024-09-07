@@ -17,7 +17,7 @@ export default function App() {
           <h2 className="text-xl font-semibold mb-4">In pairs, prepare a silica plate as follows:</h2>
           <ol className="space-y-4 list-decimal list-inside">
             <li className="pl-6 -indent-6">
-            <Tooltip anchorSelect=".my-pencil-element" place="bottom" clickable>
+            <Tooltip anchorSelect=".my-pencil-element" place="rigth" clickable>
               <div>
                 <a href='#'>Pencil Images</a>
               </div>
@@ -34,7 +34,7 @@ export default function App() {
             </li>
             <Tooltip anchorSelect=".my-anchor-element" place="top" clickable>
               <div>
-                <a href='#'>Images</a>
+                <a href='#'>Silica Images</a>
               </div>
               <hr />
               <div>
@@ -48,8 +48,21 @@ export default function App() {
 
 
             <li className="pl-6 -indent-6">
-              Mark on the <span className="text-yellow-400 hover:underline cursor-pointer">line</span> across at least 0.5cm from the side of the plate and then at equal spacing ~1cm apart the location of each of the four solutions. Use letters to denote each sample and write these onto the plate underneath the line/crosses.
+              Mark on the <a className="my-line-element text-yellow-400 hover:underline cursor-pointer">line</a> across at least 0.5cm from the side of the plate and then at equal spacing ~1cm apart the location of each of the four solutions. Use letters to denote each sample and write these onto the plate underneath the line/crosses.
             </li>
+            <Tooltip anchorSelect=".my-line-element" place="top" clickable>
+              <div>
+                <a href='#'>Images</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#' target='_blank'>Explaination</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#' target='_blank'>Issues</a>
+              </div>
+            </Tooltip>
             <li className="pl-6 -indent-6">
               Using a clean <span className="text-yellow-400 hover:underline cursor-pointer">capillary tube</span> for each solution, carefully spot each one onto the respective cross - try to keep the diameter to ~0.5cm. Each sample will need to be spotted multiple times. It is very important to ensure that the plate has dried in between each spot.
             </li>
