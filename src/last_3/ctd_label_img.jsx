@@ -45,6 +45,16 @@ const CTD_label_img = () => {
                                 allowFullScreen>
                             </iframe>
                         </div>
+                        <div className="aspect-w-16 aspect-h-9 mb-6">
+                            <iframe
+                                className="max-w-full object-cover h-auto"
+                                src="https://livenorthumbriaac-my.sharepoint.com/personal/matthew_reynolds_northumbria_ac_uk/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmatthew%5Freynolds%5Fnorthumbria%5Fac%5Fuk%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FMVI%5F2864%2EMOV&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E484b0b87%2Dd29f%2D4f58%2Db632%2Df7efca893311"
+                                title="Silica Plate Preparation Guide"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
