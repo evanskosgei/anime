@@ -28,6 +28,16 @@ import Tama_images from './tama/tama_images';
 import Tama_explaination from './tama/tama_explaination';
 import Tama_issues from './tama/tama_issues';
 
+// ctd
+import CTD_images from './ctd/ctd_images';
+import CTD_explaination from './ctd/ctd_explaination';
+import CTD_issues from './ctd/ctd_issues';
+// last 3
+import TAMA_label_img from './last_3/tama_label_img';
+import CTD_label_img from './last_3/ctd_label_img';
+import Pencil_draw_img from './last_3/pencil_draw_img';
+import Circled_spots from './last_3/circled_spots';
+
 export default function App() {
   return (
     <Router>
@@ -56,6 +66,15 @@ export default function App() {
         <Route path='/tama-image' element={<Tama_images/>} />
         <Route path='/tama-explaination' element={<Tama_explaination/>} />
         <Route path='/tama-issues' element={<Tama_issues/>} />
+        {/* ctd */}
+        <Route path='/ctd-image' element={<CTD_images/>} />
+        <Route path='/ctd-explaination' element={<CTD_explaination/>} />
+        <Route path='/ctd-issues' element={<CTD_issues/>} />
+        {/* last3 */}
+        <Route path='/tama-label-image' element={<TAMA_label_img/>} />
+        <Route path='/ctd-label-image' element={<CTD_label_img/>} />
+        <Route path='/pencil-draw-image' element={<Pencil_draw_img/>} />
+        <Route path='/circled-spots-image' element={<Circled_spots/>} />
       </Routes>
     </Router>
   );

@@ -128,14 +128,34 @@ const Home = () => {
               </ul>
             </li>
             <li className="pl-6 -indent-6">
-              One of you will label the very top of one plate <span className="text-yellow-400 hover:underline cursor-pointer">TAMA</span> and the other in your pairs will label the plate with <span className="text-yellow-400 hover:underline cursor-pointer">CTD</span> and carefully place into the respective tank. Forceps may be required. Please ensure that the lid is placed promptly back onto the tank.
+              One of you will label the very top of one plate <span className="my-tama-label-img text-yellow-400 hover:underline cursor-pointer">TAMA</span> and the other in your pairs will label the plate with <span className="my-ctd-label-img text-yellow-400 hover:underline cursor-pointer">CTD</span> and carefully place into the respective tank. Forceps may be required. Please ensure that the lid is placed promptly back onto the tank.
             </li>
+            <Tooltip anchorSelect=".my-tama-label-img" place="top" clickable>
+              <div className='px-2'>
+                <a href='/tama-label-image'>TAMA Label Images</a>
+              </div>
+            </Tooltip>
+            <Tooltip anchorSelect=".my-ctd-label-img" place="top" clickable>
+              <div className='px-2'>
+                <a href='/ctd-label-image'>CTD Label Images</a>
+              </div>
+            </Tooltip>
             <li className="pl-6 -indent-6">
-              Once the mobile phase is approx. 1cm from the top of the plate, remove from the tank and immediately <span className="text-yellow-400 hover:underline cursor-pointer">draw a pencil line</span> along the solvent front (it will evaporate off very quickly). Leave inside the fume cabinet to dry completely.
+              Once the mobile phase is approx. 1cm from the top of the plate, remove from the tank and immediately draw a<span className="my-pencil-draw-img text-yellow-400 hover:underline cursor-pointer"> pencil line</span> along the solvent front (it will evaporate off very quickly). Leave inside the fume cabinet to dry completely.
             </li>
+            <Tooltip anchorSelect=".my-pencil-draw-img" place="top" clickable>
+              <div className='px-2'>
+                <a href='/pencil-draw-image'>Pencil Line Images</a>
+              </div>
+            </Tooltip>
             <li className="pl-6 -indent-6">
-              Once dry remove from the fume cabinet and view the plate under the UV light box. <span className="text-yellow-400 hover:underline cursor-pointer">Circle any spots.</span>
+              Once dry remove from the fume cabinet and view the plate under the UV light box. <span className="my-circled-img text-yellow-400 hover:underline cursor-pointer">Circle any spots.</span>
             </li>
+            <Tooltip anchorSelect=".my-circled-img" place="top" clickable>
+              <div className='px-2'>
+                <a href='/circled-spots-image'>Circled Spots Images</a>
+              </div>
+            </Tooltip>
           </ol>
         </div>
       </div>
