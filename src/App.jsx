@@ -26,7 +26,7 @@ import UV_issues from './uv/uv_issues';
 // tama
 import Tama_images from './tama/tama_images';
 import Tama_explaination from './tama/tama_explaination';
-import Tama_issues from './tama/tama_explaination';
+import Tama_issues from './tama/tama_issues';
 
 export default function App() {
   return (
@@ -55,7 +55,7 @@ export default function App() {
         {/* tama */}
         <Route path='/tama-image' element={<Tama_images/>} />
         <Route path='/tama-explaination' element={<Tama_explaination/>} />
-        <Route path='/t-issues' element={<Tama_issues/>} />
+        <Route path='/tama-issues' element={<Tama_issues/>} />
       </Routes>
     </Router>
   );

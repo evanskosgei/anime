@@ -19,25 +19,31 @@ const Tama_issues = () => {
         </div>
         <div className="p-6">
             <p className='text-2xl font-semibold text-blue-400'>What are some of expected Issues</p>
-            <p>When using UV light in experiments such as Thin-Layer Chromatography (TLC), several issues can arise that may affect the quality of the results or cause safety concerns.</p>
-
-            <p className='text-2xl font-semibold text-blue-400'> some common problems encountered</p>
             <ol className="space-y-4 list-decimal pl-6 mb-6">
-                <li>Fading or Degradation of Samples</li>
+                <li>Volatility and Evaporation</li>
                 <ol className='list-disc'>
-                    <li>Prolonged exposure to UV light can cause some compounds to degrade or lose their fluorescence, especially if they are sensitive to light. This can make it difficult to accurately visualize and analyze the spots.</li>
+                    <li>Toluene, acetone, and methanol are volatile solvents that can evaporate quickly, especially when exposed to open air for prolonged periods. This can change the solvent composition during the experiment, leading to inconsistent results.</li>
+                    <li>Ensure that the solvent tank is sealed properly to minimize evaporation and maintain the correct solvent ratio.</li>
                 </ol>
-                <li>Difficulty in Detecting Non-UV-Active Compounds</li>
+                <li>Toxicity and Hazardous Fumes</li>
                 <ol className='list-disc'>
-                    <li>Some compounds do not absorb UV light and may not fluoresce or block the fluorescence of the TLC plate. As a result, they will not be visible under UV light, making it difficult to detect them.</li>
+                    <li>All components of TAMA are hazardous to health if inhaled in significant quantities. Toluene and ammonia, in particular, can release harmful fumes that irritate the respiratory system.</li>
+                    <li>Always perform TLC experiments using TAMA in a well-ventilated area or a fume hood, and wear proper protective equipment, including gloves and goggles.</li>
                 </ol>
-                <li>Background Interference</li>
+                <li>pH Sensitivity</li>
                 <ol className='list-disc'>
-                    <li>If the TLC plate itself has a fluorescent background (e.g., a silica plate with a fluorescent indicator), the background can sometimes be too bright, making it difficult to distinguish the spots.</li>
+                    <li>Ammonia Alters pH: Ammonia increases the pH of the solvent mixture, which may affect the separation of pH-sensitive compounds. For compounds that are sensitive to changes in pH, the use of ammonia could lead to poor separation or spot distortion.</li>
+                    <li>If pH sensitivity is a concern, an alternative solvent system without ammonia or with a buffered pH may be required.</li>
                 </ol>
-                <li>Faint or Weak Spots</li>
+                <li>Solvent Imbalance</li>
                 <ol className='list-disc'>
-                    <li>Some samples may not absorb UV light strongly, leading to weak or faint spots that are difficult to detect.</li>
+                    <li>Since TAMA is a specific mixture of four solvents in a fixed ratio, even slight deviations from this ratio can significantly affect the results of the TLC experiment. Unequal amounts or improper mixing can lead to inconsistent solvent flow or improper separation of compounds.</li>
+                    <li>Ensure precise measurement and thorough mixing of the solvents to maintain the exact 45:45:7:3 ratio for optimal results.</li>
+                </ol>
+                <li>Solvent System Saturation</li>
+                <ol className='list-disc'>
+                    <li>If the TAMA solvent is not properly saturated in the development tank (i.e., the tank is not equilibrated before placing the TLC plate), the separation may be uneven or incomplete.</li>
+                    <li>Allow the development tank to equilibrate with the solvent vapor for at least 20–30 minutes before placing the TLC plate inside to ensure consistent flow.</li>
                 </ol>
             </ol>
         </div>

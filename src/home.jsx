@@ -99,19 +99,32 @@ const Home = () => {
               <ul className="list-disc list-inside pl-4 space-y-1 text-gray-300">
                 <li><span className="my-tama-element text-yellow-400 hover:underline cursor-pointer">TAMA</span> = toluene:acetone:methanol:ammonia (45:45:7:3)</li>
                 <Tooltip anchorSelect=".my-tama-element" place="top" clickable>
-                  <div>
+                  <div className='px-2'>
                     <a href='/tama-image'>TAMA Images</a>
                   </div>
-                  <hr />
-                  <div>
+                  <hr className='mb-2 text-gray-300' />
+                  <div className='px-2'>
                     <a href='/tama-explaination'>TAMA Explaination</a>
                   </div>
-                  <hr />
-                  <div>
-                    <a href='/t-issues'>TAMA Issues</a>
+                  <hr className='mb-2 text-gray-300' />
+                  <div className='px-2'>
+                    <a href='/tama-issues'>TAMA Issues</a>
                   </div>
                 </Tooltip>
-                <li><span className="text-yellow-400 hover:underline cursor-pointer">CTD</span> = cyclohexamine:toluene:diethylamine (75:15:10)</li>
+                <li><span className="my-CTD-element text-yellow-400 hover:underline cursor-pointer">CTD</span> = cyclohexamine:toluene:diethylamine (75:15:10)</li>
+                <Tooltip anchorSelect=".my-CTD-element" place="top" clickable>
+                  <div className='px-2'>
+                    <a href='/ctd-image'>CTD Images</a>
+                  </div>
+                  <hr className='mb-2 text-gray-300' />
+                  <div className='px-2'>
+                    <a href='/ctd-explaination'>CTD Explaination</a>
+                  </div>
+                  <hr className='mb-2 text-gray-300' />
+                  <div className='px-2'>
+                    <a href='/ctd-issues'>CTD Issues</a>
+                  </div>
+                </Tooltip>
               </ul>
             </li>
             <li className="pl-6 -indent-6">
