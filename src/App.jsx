@@ -23,6 +23,10 @@ import C_issues from './capillary/c_issues';
 import Uv_images from './uv/uv_images';
 import UV_explaination from './uv/uv_explaination';
 import UV_issues from './uv/uv_issues';
+// tama
+import Tama_images from './tama/tama_images';
+import Tama_explaination from './tama/tama_explaination';
+import Tama_issues from './tama/tama_explaination';
 
 export default function App() {
   return (
@@ -48,6 +52,10 @@ export default function App() {
         <Route path='/uv-image' element={<Uv_images/>} />
         <Route path='/uv-explaination' element={<UV_explaination/>} />
         <Route path='/uv-issues' element={<UV_issues/>} />
+        {/* tama */}
+        <Route path='/tama-image' element={<Tama_images/>} />
+        <Route path='/tama-explaination' element={<Tama_explaination/>} />
+        <Route path='/tama-issues' element={<Tama_issues/>} />
       </Routes>
     </Router>
   );

@@ -97,7 +97,20 @@ const Home = () => {
             </Tooltip>
             <li className="pl-6 -indent-6 mb-2">The following solvents are in development tanks in the fume cupboards:
               <ul className="list-disc list-inside pl-4 space-y-1 text-gray-300">
-                <li><span className="text-yellow-400 hover:underline cursor-pointer">TAMA</span> = toluene:acetone:methanol:ammonia (45:45:7:3)</li>
+                <li><span className="my-tama-element text-yellow-400 hover:underline cursor-pointer">TAMA</span> = toluene:acetone:methanol:ammonia (45:45:7:3)</li>
+                <Tooltip anchorSelect=".my-tama-element" place="top" clickable>
+                  <div>
+                    <a href='/tama-image'>TAMA Images</a>
+                  </div>
+                  <hr />
+                  <div>
+                    <a href='/tama-explaination'>TAMA Explaination</a>
+                  </div>
+                  <hr />
+                  <div>
+                    <a href='/tama-issues'>TAMA Issues</a>
+                  </div>
+                </Tooltip>
                 <li><span className="text-yellow-400 hover:underline cursor-pointer">CTD</span> = cyclohexamine:toluene:diethylamine (75:15:10)</li>
               </ul>
             </li>
