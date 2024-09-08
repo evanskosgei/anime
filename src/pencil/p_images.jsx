@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { MoveLeft } from 'lucide-react';
-import effect from "../assets/pencil/effects.jpeg"
+import effect from "../assets/pencil/blunt and sharp pencil.jpeg"
+import sharp_mark from "../assets/pencil/sharp-pencil.jpeg"
 
 const P_images = () => {
     return (
@@ -20,7 +21,7 @@ const P_images = () => {
                 </div>
                 <div className="p-6">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <div className="aspect-w-16 aspect-h-9 mb-6">
+                        {/* <div className="aspect-w-16 aspect-h-auto mb-6">
                             <iframe
                                 className="max-w-full h-auto"
                                 src="https://www.youtube.com/embed/7MTwbQB7q5k"
@@ -29,9 +30,12 @@ const P_images = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen>
                             </iframe>
-                        </div>
+                        </div> */}
                         <div>
                             <img className="h-auto max-w-full rounded-lg" src={effect} alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src={sharp_mark} alt=""/>
                         </div>
                     </div>
                 </div>
