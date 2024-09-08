@@ -19,6 +19,10 @@ import L_explaination from './line/l_explaination';
 import C_images from './capillary/c_images';
 import C_explaination from './capillary/c_explaination';
 import C_issues from './capillary/c_issues';
+// uv
+import Uv_images from './uv/uv_images';
+import UV_explaination from './uv/uv_explaination';
+import UV_issues from './uv/uv_issues';
 
 export default function App() {
   return (
@@ -40,6 +44,10 @@ export default function App() {
         <Route path='/c-image' element={<C_images/>} />
         <Route path='/c-explaination' element={<C_explaination/>} />
         <Route path='/c-issues' element={<C_issues/>} />
+        {/* uv */}
+        <Route path='/uv-image' element={<Uv_images/>} />
+        <Route path='/uv-explaination' element={<UV_explaination/>} />
+        <Route path='/uv-issues' element={<UV_issues/>} />
       </Routes>
     </Router>
   );

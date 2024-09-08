@@ -80,8 +80,21 @@ const Home = () => {
               </div>
             </Tooltip>
             <li className="pl-6 -indent-6">
-              Check under short <span className="text-yellow-400 hover:underline cursor-pointer">UV</span> that you can clearly see your spots on the bottom line.
+              Check under short <span className="my-uv-element text-yellow-400 hover:underline cursor-pointer">UV</span> that you can clearly see your spots on the bottom line.
             </li>
+            <Tooltip anchorSelect=".my-uv-element" place="top" clickable>
+              <div>
+                <a href='/uv-image'>UV Images</a>
+              </div>
+              <hr />
+              <div>
+                <a href='/uv-explaination'>UV Explaination</a>
+              </div>
+              <hr />
+              <div>
+                <a href='/uv-issues'>UV Issues</a>
+              </div>
+            </Tooltip>
             <li className="pl-6 -indent-6 mb-2">The following solvents are in development tanks in the fume cupboards:
               <ul className="list-disc list-inside pl-4 space-y-1 text-gray-300">
                 <li><span className="text-yellow-400 hover:underline cursor-pointer">TAMA</span> = toluene:acetone:methanol:ammonia (45:45:7:3)</li>
