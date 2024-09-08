@@ -7,6 +7,11 @@ import P_images from './pencil/p_images';
 import P_explaination from './pencil/p_explaination';
 import P_issues from './pencil/p_issues';
 
+// silica
+import S_image from './silica/s_image';
+import S_explaination from './silica/s_explaination';
+import S_issues from './silica/s_issues';
+
 export default function App() {
   return (
     <Router>
@@ -16,6 +21,10 @@ export default function App() {
         <Route path='/p-images' element={<P_images />} />
         <Route path='/p-explaination' element={<P_explaination/>} />
         <Route path='/p-issues' element={<P_issues/>} />
+        {/* silica */}
+        <Route path='/s-image' element={<S_image/>} />
+        <Route path='/s-explaination' element={<S_explaination/>} />
+        <Route path='/s-issues' element={<S_issues/>} />
       </Routes>
     </Router>
   );

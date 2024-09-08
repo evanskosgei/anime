@@ -30,19 +30,19 @@ const Home = () => {
               </div>
             </Tooltip>
             <li className="pl-6 -indent-6">
-              Using a <a className="my-pencil-element text-yellow-400 hover:underline cursor-pointer">pencil</a>, draw a line 1cm from the bottom of each plate. When marking the plate, it is very important to take care not to press too hard so as to scratch or damage the <a className="my-anchor-element text-yellow-400 hover:underline cursor-pointer">silica</a> surface of the plate.
+              Using a <a className="my-pencil-element text-yellow-400 hover:underline cursor-pointer">pencil</a>, draw a line 1cm from the bottom of each plate. When marking the plate, it is very important to take care not to press too hard so as to scratch or damage the <a className="my-silica-element text-yellow-400 hover:underline cursor-pointer">silica</a> surface of the plate.
             </li>
-            <Tooltip anchorSelect=".my-anchor-element" place="top" clickable>
+            <Tooltip anchorSelect=".my-silica-element" place="top" clickable>
               <div>
-                <a href='#'>Silica Images</a>
+                <a href='/s-image'>Silica Images</a>
               </div>
               <hr />
               <div>
-                <a href='#' target='_blank'>Explaination</a>
+                <a href='/s-explaination'>Explaination</a>
               </div>
               <hr />
               <div>
-                <a href='#' target='_blank'>Issues</a>
+                <a href='/s-issues'>Issues</a>
               </div>
             </Tooltip>
 
