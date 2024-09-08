@@ -15,6 +15,10 @@ import S_issues from './silica/s_issues';
 // line
 import L_image from './line/l_image';
 import L_explaination from './line/l_explaination';
+// capillary
+import C_images from './capillary/c_images';
+import C_explaination from './capillary/c_explaination';
+import C_issues from './capillary/c_issues';
 
 export default function App() {
   return (
@@ -32,6 +36,10 @@ export default function App() {
         {/* Line */}
         <Route path='/l-image' element={<L_image/>} />
         <Route path='/l-explaination' element={<L_explaination/>} />
+        {/* capillarry */}
+        <Route path='/c-image' element={<C_images/>} />
+        <Route path='/c-explaination' element={<C_explaination/>} />
+        <Route path='/c-issues' element={<C_issues/>} />
       </Routes>
     </Router>
   );
