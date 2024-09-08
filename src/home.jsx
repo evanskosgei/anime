@@ -108,7 +108,7 @@ const Home = () => {
                   </div>
                   <hr />
                   <div>
-                    <a href='/tama-issues'>TAMA Issues</a>
+                    <a href='/t-issues'>TAMA Issues</a>
                   </div>
                 </Tooltip>
                 <li><span className="text-yellow-400 hover:underline cursor-pointer">CTD</span> = cyclohexamine:toluene:diethylamine (75:15:10)</li>

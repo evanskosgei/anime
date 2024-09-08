@@ -55,7 +55,7 @@ export default function App() {
         {/* tama */}
         <Route path='/tama-image' element={<Tama_images/>} />
         <Route path='/tama-explaination' element={<Tama_explaination/>} />
-        <Route path='/tama-issues' element={<Tama_issues/>} />
+        <Route path='/t-issues' element={<Tama_issues/>} />
       </Routes>
     </Router>
   );
