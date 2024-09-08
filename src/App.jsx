@@ -12,6 +12,10 @@ import S_image from './silica/s_image';
 import S_explaination from './silica/s_explaination';
 import S_issues from './silica/s_issues';
 
+// line
+import L_image from './line/l_image';
+import L_explaination from './line/l_explaination';
+
 export default function App() {
   return (
     <Router>
@@ -25,6 +29,9 @@ export default function App() {
         <Route path='/s-image' element={<S_image/>} />
         <Route path='/s-explaination' element={<S_explaination/>} />
         <Route path='/s-issues' element={<S_issues/>} />
+        {/* Line */}
+        <Route path='/l-image' element={<L_image/>} />
+        <Route path='/l-explaination' element={<L_explaination/>} />
       </Routes>
     </Router>
   );

@@ -52,16 +52,16 @@ const Home = () => {
             </li>
             <Tooltip anchorSelect=".my-line-element" place="top" clickable>
               <div>
-                <a href='#'>Images</a>
+                <a href='/l-image'>Line Images</a>
               </div>
               <hr />
               <div>
-                <a href='#' target='_blank'>Explaination</a>
+                <a href='/l-explaination'>Line Explaination</a>
               </div>
               <hr />
-              <div>
-                <a href='#' target='_blank'>Issues</a>
-              </div>
+              {/* <div>
+                <a href='#'>Line Issues</a>
+              </div> */}
             </Tooltip>
             <li className="pl-6 -indent-6">
               Using a clean <span className="text-yellow-400 hover:underline cursor-pointer">capillary tube</span> for each solution, carefully spot each one onto the respective cross - try to keep the diameter to ~0.5cm. Each sample will need to be spotted multiple times. It is very important to ensure that the plate has dried in between each spot.
