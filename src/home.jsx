@@ -16,20 +16,20 @@ const Home = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-4">In pairs, prepare a silica plate as follows:</h2>
           <ol className="space-y-4 list-decimal list-inside">
-            <li className="pl-6 -indent-6">
             <Tooltip anchorSelect=".my-pencil-element" place="rigth" clickable>
               <div>
                 <a href='/p-images'>Pencil Images</a>
               </div>
               <hr />
               <div>
-                <a href='#' target='_blank'>Explaination</a>
+                <a href='/p-explaination'>Explaination</a>
               </div>
               <hr />
               <div>
-                <a href='#' target='_blank'>Issues</a>
+                <a href='/p-issues'>Issues</a>
               </div>
             </Tooltip>
+            <li className="pl-6 -indent-6">
               Using a <a className="my-pencil-element text-yellow-400 hover:underline cursor-pointer">pencil</a>, draw a line 1cm from the bottom of each plate. When marking the plate, it is very important to take care not to press too hard so as to scratch or damage the <a className="my-anchor-element text-yellow-400 hover:underline cursor-pointer">silica</a> surface of the plate.
             </li>
             <Tooltip anchorSelect=".my-anchor-element" place="top" clickable>
