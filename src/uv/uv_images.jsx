@@ -27,7 +27,7 @@ const Uv_images = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-w-16 aspect-h-9 mb-6">
               <iframe
-                className="max-w-full object-cover h-auto"
+                className="max-w-full object-fill h-auto"
                 src={uv_5}
                 title="Silica Plate Preparation Guide"
                 frameBorder="0"
@@ -37,7 +37,7 @@ const Uv_images = () => {
             </div>
             <div className="aspect-w-16 aspect-h-9 mb-6">
               <iframe
-                className="max-w-full h-auto"
+                className="max-w-full object-fill h-auto"
                 src={uv_6}
                 title="Silica Plate Preparation Guide"
                 frameBorder="0"
