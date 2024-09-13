@@ -1,11 +1,26 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import { MoveLeft } from 'lucide-react';
 import silica_1 from "../assets/silica/silica1.jpeg"
 import silica_2 from "../assets/silica/silica2.jpeg"
 import silica_3 from "../assets/silica/silica3.jpeg"
+import Zoom_img from '../components/zoom';
 
 const S_image = () => {
+  const [openZoom, setOpenZoom] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
+
+  const images = [
+    { src: silica_1, alt: "Silica plate 1" },
+    { src: silica_2, alt: "Silica plate 2" },
+    { src: silica_3, alt: "Silica plate 3" },
+  ];
+
+  const handleImageClick = (image) => {
+    setCurrentImage(image);
+    setOpenZoom(true);
+  };
+
   return (
     <div className="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen p-4 sm:p-8 text-white">
       <div className="max-w-4xl mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden">
@@ -22,28 +37,31 @@ const S_image = () => {
         </div>
         <div className="p-6">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {/* <div className="aspect-w-16 aspect-h-auto mb-6">
-              <iframe
-                className="max-w-full h-auto"
-                src="https://www.youtube.com/embed/7MTwbQB7q5k"
-                title="Silica Plate Preparation Guide"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen>
-              </iframe>
-            </div> */}
-            <div>
-              <img className="h-auto max-w-full rounded-lg" src={silica_1} alt="" />
-            </div>
-            <div>
-              <img className="h-auto max-w-full rounded-lg" src={silica_2} alt="" />
-            </div>
-            <div>
-              <img className="h-auto max-w-full rounded-lg" src={silica_3} alt="" />
-            </div>
+            {images.map((image, index) => (
+              <div key={index}>
+                <button 
+                  onClick={() => handleImageClick(image)}
+                  className="w-full h-full"
+                >
+                  <img 
+                    className="h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out hover:scale-105" 
+                    src={image.src} 
+                    alt={image.alt} 
+                  />
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+      {currentImage && (
+        <Zoom_img
+          isOpen={openZoom}
+          onClose={() => setOpenZoom(false)}
+          imageUrl={currentImage.src}
+          altText={currentImage.alt}
+        />
+      )}
     </div>
   )
 }

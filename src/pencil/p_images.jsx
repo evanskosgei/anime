@@ -32,7 +32,7 @@ const P_images = () => {
                 </div>
             </div>
 
-            <Zoom_img 
+            <Zoom_img
                 isOpen={openZoom}
                 onClose={() => setOpenZoom(false)}
                 imageUrl={effect}

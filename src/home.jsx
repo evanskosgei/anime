@@ -59,13 +59,22 @@ const Home = () => {
                 <a href='/l-explaination'>Line Explaination</a>
               </div>
               <hr />
-              {/* <div>
-                <a href='#'>Line Issues</a>
-              </div> */}
             </Tooltip>
             <li className="pl-6 -indent-6">
-              Using a clean <span className="my-capillary-element text-yellow-400 hover:underline cursor-pointer">capillary tube</span> for each solution, carefully spot each one onto the respective cross - try to keep the diameter to ~0.5cm. Each sample will need to be spotted multiple times. It is very important to ensure that the plate has dried in between each spot.
+              Using a clean <span className="my-capillary-element text-yellow-400 hover:underline cursor-pointer">capillary tube</span> for each solution, carefully spot each one onto the respective cross - try to keep the diameter to ~0.5cm. Each sample will need to be <a className="my-spotted-line text-yellow-400 hover:underline cursor-pointer"> spotted multiple times</a>. It is very important to ensure that the plate has dried in between each spot.
             </li>
+            <Tooltip anchorSelect=".my-spotted-line" place="top" clickable>
+              <div>
+                <a href='/spotted-images'>Spotted Line Images</a>
+              </div>
+              <hr />
+              <div>
+                <a href='#'>Spotted Explaination</a>
+              </div>
+              <hr />
+            </Tooltip>
+
+
             <Tooltip anchorSelect=".my-capillary-element" place="top" clickable>
               <div>
                 <a href='/c-image'>Capillary tube Images</a>

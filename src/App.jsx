@@ -38,11 +38,16 @@ import CTD_label_img from './last_3/ctd_label_img';
 import Pencil_draw_img from './last_3/pencil_draw_img';
 import Circled_spots from './last_3/circled_spots';
 
+// spotted
+import Spotted_img from './spotted/spotted_img';
+
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />}/>
+        {/* spotted */}
+        <Route path='/spotted-images' element={<Spotted_img/>} />
         {/* pencil */}
         <Route path='/p-images' element={<P_images />} />
         <Route path='/p-explaination' element={<P_explaination/>} />
