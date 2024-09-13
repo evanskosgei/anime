@@ -1,10 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import { MoveLeft } from 'lucide-react';
 import effect from "../assets/pencil/blunt and sharp pencil.jpeg"
-import sharp_mark from "../assets/pencil/sharp-pencil.jpeg"
+import Zoom_img from '../components/zoom';
 
 const P_images = () => {
+    const [openZoom, setOpenZoom] = useState(false);
+
     return (
         <div className="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen p-4 sm:p-8 text-white">
             <div className="max-w-4xl mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden">
@@ -21,25 +23,21 @@ const P_images = () => {
                 </div>
                 <div className="p-6">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        {/* <div className="aspect-w-16 aspect-h-auto mb-6">
-                            <iframe
-                                className="max-w-full h-auto"
-                                src="https://www.youtube.com/embed/7MTwbQB7q5k"
-                                title="Silica Plate Preparation Guide"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen>
-                            </iframe>
-                        </div> */}
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg" src={effect} alt=""/>
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg" src={sharp_mark} alt=""/>
+                        <div className="overflow-hidden rounded-lg">
+                            <button onClick={() => setOpenZoom(true)}>
+                                <img className="h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out hover:scale-110" src={effect} alt="Blunt and sharp pencil" />
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <Zoom_img 
+                isOpen={openZoom}
+                onClose={() => setOpenZoom(false)}
+                imageUrl={effect}
+                altText="Blunt and sharp pencil"
+            />
         </div>
     );
 };

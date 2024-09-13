@@ -2,6 +2,7 @@
 import React from 'react'
 import { MoveLeft } from 'lucide-react';
 import tube_1 from "../assets/capillary_tube/tube1.jpeg"
+import tube_2 from "../assets/capillary_tube/tube2.jpeg"
 
 const C_images = () => {
   return (
@@ -33,9 +34,9 @@ const C_images = () => {
             <div>
               <img className="h-auto max-w-full rounded-lg" src={tube_1} alt="" />
             </div>
-            {/* <div>
-              <img className="h-auto max-w-full rounded-lg" src={line_2} alt="" />
-            </div> */}
+            <div>
+              <img className="h-auto max-w-full rounded-lg" src={tube_2} alt="" />
+            </div>
           </div>
         </div>
       </div>
