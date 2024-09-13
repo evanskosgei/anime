@@ -181,18 +181,74 @@
   "monitoringSpotIntensity": "Monitoring Spot Intensity and Shape",
   "spotIntensityDescription": "The intensity of fluorescence or the contrast under UV light helps assess how concentrated or diluted a sample is. It can indicate whether the spots are concentrated enough for clear separation.",
   "spotDiffusionDescription": "Spotting under UV light also helps to detect if the spots are too diffuse, irregular, or merged, which could affect the interpretation of results.",
+  "UvIssues": "UV Issues",
+  "expectedIssues": "What are some of the expected Issues",
+  "uvIssuesDescription": "When using UV light in experiments such as Thin-Layer Chromatography (TLC), several issues can arise that may affect the quality of the results or cause safety concerns.",
+  "commonProblems": "Some common problems encountered",
+  "fadingDegradation": "Fading or Degradation of Samples",
+  "fadingDegradationDescription": "Prolonged exposure to UV light can cause some compounds to degrade or lose their fluorescence, especially if they are sensitive to light. This can make it difficult to accurately visualize and analyze the spots.",
+  "nonUVActiveCompounds": "Difficulty in Detecting Non-UV-Active Compounds",
+  "nonUVActiveCompoundsDescription": "Some compounds do not absorb UV light and may not fluoresce or block the fluorescence of the TLC plate. As a result, they will not be visible under UV light, making it difficult to detect them.",
+  "backgroundInterference": "Background Interference",
+  "backgroundInterferenceDescription": "If the TLC plate itself has a fluorescent background (e.g., a silica plate with a fluorescent indicator), the background can sometimes be too bright, making it difficult to distinguish the spots.",
+  "faintWeakSpots": "Faint or Weak Spots",
+  "faintWeakSpotsDescription": "Some samples may not absorb UV light strongly, leading to weak or faint spots that are difficult to detect.",
 
-    "UvIssues": "UV Issues",
-    "expectedIssues": "What are some of the expected Issues",
-    "uvIssuesDescription": "When using UV light in experiments such as Thin-Layer Chromatography (TLC), several issues can arise that may affect the quality of the results or cause safety concerns.",
-    "commonProblems": "Some common problems encountered",
-    "fadingDegradation": "Fading or Degradation of Samples",
-    "fadingDegradationDescription": "Prolonged exposure to UV light can cause some compounds to degrade or lose their fluorescence, especially if they are sensitive to light. This can make it difficult to accurately visualize and analyze the spots.",
-    "nonUVActiveCompounds": "Difficulty in Detecting Non-UV-Active Compounds",
-    "nonUVActiveCompoundsDescription": "Some compounds do not absorb UV light and may not fluoresce or block the fluorescence of the TLC plate. As a result, they will not be visible under UV light, making it difficult to detect them.",
-    "backgroundInterference": "Background Interference",
-    "backgroundInterferenceDescription": "If the TLC plate itself has a fluorescent background (e.g., a silica plate with a fluorescent indicator), the background can sometimes be too bright, making it difficult to distinguish the spots.",
-    "faintWeakSpots": "Faint or Weak Spots",
-    "faintWeakSpotsDescription": "Some samples may not absorb UV light strongly, leading to weak or faint spots that are difficult to detect."
+
+    "tamaExplaination": "TAMA Explanation",
+    "whatIsTama": "What is TAMA?",
+    "TamaDescription": "TAMA is a solvent system used in Thin-Layer Chromatography (TLC) experiments. It is a specific mixture of four solvents:",
+    "solventsList": ["Toluene", "Acetone", "Methanol", "Ammonia"],
+    "tamaRatio": "The ratio in which these solvents are mixed is typically 45:45:7:3, meaning 45 parts toluene, 45 parts acetone, 7 parts methanol, and 3 parts ammonia.",
+    "purposeOfTama": "Purpose of TAMA in TLC",
+    "tamaPurposeDescription": "TAMA is used as the mobile phase (the solvent system that moves up the TLC plate). Different solvents have varying polarity, and the specific combination in TAMA allows for the separation of compounds based on their polarity and interaction with the silica (stationary phase) and the solvent system (mobile phase).",
+    "rolesOfComponents": "Roles of Each Component",
+    "rolesList": {
+      "toluene": "Toluene: A non-polar solvent, helps dissolve non-polar compounds.",
+      "acetone": "Acetone: A moderately polar solvent, which helps balance the polarity.",
+      "methanol": "Methanol: A polar solvent, increases the solvent's ability to move polar compounds.",
+      "ammonia": "Ammonia: Used to alter the pH, helping in the separation of compounds that are sensitive to pH changes or charged compounds."
+  },
+  
+
+    "TamaIssues": "TAMA Issues",
+    "ExpectedIssues": "What are some of expected Issues",
+    "issuesList": [
+      {
+        "title": "Volatility and Evaporation",
+        "details": [
+          "Toluene, acetone, and methanol are volatile solvents that can evaporate quickly, especially when exposed to open air for prolonged periods. This can change the solvent composition during the experiment, leading to inconsistent results.",
+          "Ensure that the solvent tank is sealed properly to minimize evaporation and maintain the correct solvent ratio."
+        ]
+      },
+      {
+        "title": "Toxicity and Hazardous Fumes",
+        "details": [
+          "All components of TAMA are hazardous to health if inhaled in significant quantities. Toluene and ammonia, in particular, can release harmful fumes that irritate the respiratory system.",
+          "Always perform TLC experiments using TAMA in a well-ventilated area or a fume hood, and wear proper protective equipment, including gloves and goggles."
+        ]
+      },
+      {
+        "title": "pH Sensitivity",
+        "details": [
+          "Ammonia Alters pH: Ammonia increases the pH of the solvent mixture, which may affect the separation of pH-sensitive compounds. For compounds that are sensitive to changes in pH, the use of ammonia could lead to poor separation or spot distortion.",
+          "If pH sensitivity is a concern, an alternative solvent system without ammonia or with a buffered pH may be required."
+        ]
+      },
+      {
+        "title": "Solvent Imbalance",
+        "details": [
+          "Since TAMA is a specific mixture of four solvents in a fixed ratio, even slight deviations from this ratio can significantly affect the results of the TLC experiment. Unequal amounts or improper mixing can lead to inconsistent solvent flow or improper separation of compounds.",
+          "Ensure precise measurement and thorough mixing of the solvents to maintain the exact 45:45:7:3 ratio for optimal results."
+        ]
+      },
+      {
+        "title": "Solvent System Saturation",
+        "details": [
+          "If the TAMA solvent is not properly saturated in the development tank (i.e., the tank is not equilibrated before placing the TLC plate), the separation may be uneven or incomplete.",
+          "Allow the development tank to equilibrate with the solvent vapor for at least 20–30 minutes before placing the TLC plate inside to ensure consistent flow."
+        ]
+      }
+    ]
   
 }

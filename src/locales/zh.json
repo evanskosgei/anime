@@ -179,18 +179,76 @@
     "monitoringSpotIntensity": "监控斑点强度和形状",
     "spotIntensityDescription": "在紫外线下的荧光强度或对比度有助于评估样品的浓度或稀释程度。它可以指示斑点是否足够集中以便于清晰分离。",
     "spotDiffusionDescription": "在紫外线下检查斑点还可以帮助检测斑点是否过于扩散、不规则或融合，这可能会影响结果的解释。",
+    "UvIssues": "紫外线问题",
+    "expectedIssues": "预期的一些问题是什么",
+    "uvIssuesDescription": "在薄层色谱（TLC）等实验中使用紫外线时，可能会出现一些问题，这些问题可能影响结果的质量或导致安全隐患。",
+    "commonProblems": "常见问题",
+    "fadingDegradation": "样品褪色或降解",
+    "fadingDegradationDescription": "长时间暴露于紫外线下可能会导致某些化合物降解或失去荧光，尤其是那些对光敏感的化合物。这会使准确可视化和分析斑点变得困难。",
+    "nonUVActiveCompounds": "难以检测非紫外线活性化合物",
+    "nonUVActiveCompoundsDescription": "有些化合物不吸收紫外线，可能不会荧光或阻挡TLC板的荧光。因此，它们在紫外线下不会可见，难以检测。",
+    "backgroundInterference": "背景干扰",
+    "backgroundInterferenceDescription": "如果TLC板本身具有荧光背景（例如，带有荧光指示剂的硅胶板），背景有时会过于明亮，难以区分斑点。",
+    "faintWeakSpots": "斑点微弱",
+    "faintWeakSpotsDescription": "某些样品可能不会强烈吸收紫外线，导致斑点微弱或难以检测。",
+    "tamaExplaination": "TAMA 解释",
+    "whatIsTama": "什么是TAMA?",
+    "TamaDescription": "TAMA 是用于薄层色谱 (TLC) 实验的溶剂系统。它是四种溶剂的特定混合物：",
+    "solventsList": [
+        "甲苯",
+        "丙酮",
+        "甲醇",
+        "氨水"
+    ],
+    "tamaRatio": "这些溶剂的混合比例通常为 45:45:7:3，即 45 份甲苯、45 份丙酮、7 份甲醇和 3 份氨水。",
+    "purposeOfTama": "TLC 中 TAMA 的用途",
+    "tamaPurposeDescription": "TAMA 作为流动相（在 TLC 板上移动的溶剂系统）使用。不同溶剂具有不同的极性，TAMA 的特定组合允许根据其极性及与硅胶（固定相）和溶剂系统（流动相）的相互作用来分离化合物。",
+    "rolesOfComponents": "各组分的作用",
+    "rolesList": {
+        "toluene": "甲苯：一种非极性溶剂，有助于溶解非极性化合物。",
+        "acetone": "丙酮：一种中等极性的溶剂，有助于平衡极性。",
+        "methanol": "甲醇：一种极性溶剂，增强溶剂移动极性化合物的能力。",
+        "ammonia": "氨水：用于改变 pH，有助于分离对 pH 变化敏感的化合物或带电化合物。"
+    },
 
-        "UvIssues": "紫外线问题",
-        "expectedIssues": "预期的一些问题是什么",
-        "uvIssuesDescription": "在薄层色谱（TLC）等实验中使用紫外线时，可能会出现一些问题，这些问题可能影响结果的质量或导致安全隐患。",
-        "commonProblems": "常见问题",
-        "fadingDegradation": "样品褪色或降解",
-        "fadingDegradationDescription": "长时间暴露于紫外线下可能会导致某些化合物降解或失去荧光，尤其是那些对光敏感的化合物。这会使准确可视化和分析斑点变得困难。",
-        "nonUVActiveCompounds": "难以检测非紫外线活性化合物",
-        "nonUVActiveCompoundsDescription": "有些化合物不吸收紫外线，可能不会荧光或阻挡TLC板的荧光。因此，它们在紫外线下不会可见，难以检测。",
-        "backgroundInterference": "背景干扰",
-        "backgroundInterferenceDescription": "如果TLC板本身具有荧光背景（例如，带有荧光指示剂的硅胶板），背景有时会过于明亮，难以区分斑点。",
-        "faintWeakSpots": "斑点微弱",
-        "faintWeakSpotsDescription": "某些样品可能不会强烈吸收紫外线，导致斑点微弱或难以检测。"
-      
+
+        "TamaIssues": "TAMA 问题",
+        "ExpectedIssues": "一些预期的问题是什么",
+        "issuesList": [
+          {
+            "title": "挥发性和蒸发",
+            "details": [
+              "甲苯、丙酮和甲醇是挥发性溶剂，特别是在长时间暴露在空气中时，可能会快速蒸发。这会在实验过程中改变溶剂组成，导致结果不一致。",
+              "确保溶剂罐密封良好，以减少蒸发并保持正确的溶剂比例。"
+            ]
+          },
+          {
+            "title": "毒性和有害气体",
+            "details": [
+              "TAMA 的所有成分如果大量吸入都是有害的。尤其是甲苯和氨气可能释放有害气体，刺激呼吸系统。",
+              "始终在通风良好的区域或排气罩中使用 TAMA 进行 TLC 实验，并佩戴适当的防护设备，包括手套和护目镜。"
+            ]
+          },
+          {
+            "title": "pH 敏感性",
+            "details": [
+              "氨气改变 pH：氨气会增加溶剂混合物的 pH，这可能会影响 pH 敏感化合物的分离。对于对 pH 变化敏感的化合物，使用氨气可能会导致分离不良或斑点失真。",
+              "如果 pH 敏感性是一个问题，则可能需要使用不含氨气或具有缓冲 pH 的替代溶剂系统。"
+            ]
+          },
+          {
+            "title": "溶剂不平衡",
+            "details": [
+              "由于 TAMA 是四种溶剂按固定比例混合的特定混合物，即使是轻微的比例偏差也会显著影响 TLC 实验的结果。不平等的量或不正确的混合可能会导致不一致的溶剂流动或化合物分离不良。",
+              "确保精确测量和彻底混合溶剂，以保持准确的 45:45:7:3 比例，以获得最佳结果。"
+            ]
+          },
+          {
+            "title": "溶剂系统饱和度",
+            "details": [
+              "如果 TAMA 溶剂在发展罐中没有正确饱和（即，放置 TLC 纸板之前没有平衡），分离可能会不均匀或不完整。",
+              "在将 TLC 纸板放入之前，让发展罐与溶剂蒸汽平衡至少 20-30 分钟，以确保一致的流动。"
+            ]
+          }
+        ]      
 }
