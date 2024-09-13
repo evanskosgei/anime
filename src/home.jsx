@@ -2,7 +2,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Tooltip } from 'react-tooltip';
-// import LanguageSelector from './LanguageSelector';
 import LanguageSelector from './components/languageSelector';
 
 const Home = () => {
