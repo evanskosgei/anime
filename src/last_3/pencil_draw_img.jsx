@@ -1,10 +1,22 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import { MoveLeft } from 'lucide-react';
 import pencil_1 from "../assets/pencil_line/pencil1.jpeg"
 import pencil_2 from "../assets/pencil_line/pencil2.jpeg"
+import Zoom_img from '../components/zoom';
 
 const Pencil_draw_img = () => {
+    const [openZoom, setOpenZoom] = useState(false);
+    const [currentImage, setCurrentImage] = useState(null);
+
+    const images = [
+        { src: pencil_1, alt: "Line image 4" },
+        { src: pencil_2, alt: "Line image 5" },
+    ];
+    const handleImageClick = (image) => {
+        setCurrentImage(image);
+        setOpenZoom(true);
+    };
     return (
         <div className="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen p-4 sm:p-8 text-white">
             <div className="max-w-4xl mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden">
@@ -21,23 +33,31 @@ const Pencil_draw_img = () => {
                 </div>
                 <div className="p-6">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <div>
-                            <img
-                                className="w-full h-auto rounded-lg"
-                                src={pencil_1}
-                                alt="Silica Plate Preparation"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                className="w-full h-auto rounded-lg"
-                                src={pencil_2}
-                                alt="Silica Plate Preparation"
-                            />
-                        </div>
+                        {images.map((image, index) => (
+                            <div key={index}>
+                                <button
+                                    onClick={() => handleImageClick(image)}
+                                    className="w-full h-full"
+                                >
+                                    <img
+                                        className="h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
+                                        src={image.src}
+                                        alt={image.alt}
+                                    />
+                                </button>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
+            {currentImage && (
+                <Zoom_img
+                    isOpen={openZoom}
+                    onClose={() => setOpenZoom(false)}
+                    imageUrl={currentImage.src}
+                    altText={currentImage.alt}
+                />
+            )}
         </div>
     )
 }
