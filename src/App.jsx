@@ -45,41 +45,41 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />} />
         {/* spotted */}
-        <Route path='/spotted-images' element={<Spotted_img/>} />
+        <Route path='/spotted-images' element={<Spotted_img />} />
         {/* pencil */}
         <Route path='/p-images' element={<P_images />} />
-        <Route path='/p-explaination' element={<P_explaination/>} />
-        <Route path='/p-issues' element={<P_issues/>} />
+        <Route path='/p-explaination' element={<P_explaination />} />
+        <Route path='/p-issues' element={<P_issues />} />
         {/* silica */}
-        <Route path='/s-image' element={<S_image/>} />
-        <Route path='/s-explaination' element={<S_explaination/>} />
-        <Route path='/s-issues' element={<S_issues/>} />
+        <Route path='/s-image' element={<S_image />} />
+        <Route path='/s-explaination' element={<S_explaination />} />
+        <Route path='/s-issues' element={<S_issues />} />
         {/* Line */}
-        <Route path='/l-image' element={<L_image/>} />
-        <Route path='/l-explaination' element={<L_explaination/>} />
+        <Route path='/l-image' element={<L_image />} />
+        <Route path='/l-explaination' element={<L_explaination />} />
         {/* capillarry */}
-        <Route path='/c-image' element={<C_images/>} />
-        <Route path='/c-explaination' element={<C_explaination/>} />
-        <Route path='/c-issues' element={<C_issues/>} />
+        <Route path='/c-image' element={<C_images />} />
+        <Route path='/c-explaination' element={<C_explaination />} />
+        <Route path='/c-issues' element={<C_issues />} />
         {/* uv */}
-        <Route path='/uv-image' element={<Uv_images/>} />
-        <Route path='/uv-explaination' element={<UV_explaination/>} />
-        <Route path='/uv-issues' element={<UV_issues/>} />
+        <Route path='/uv-image' element={<Uv_images />} />
+        <Route path='/uv-explaination' element={<UV_explaination />} />
+        <Route path='/uv-issues' element={<UV_issues />} />
         {/* tama */}
-        <Route path='/tama-image' element={<Tama_images/>} />
-        <Route path='/tama-explaination' element={<Tama_explaination/>} />
-        <Route path='/tama-issues' element={<Tama_issues/>} />
+        <Route path='/tama-image' element={<Tama_images />} />
+        <Route path='/tama-explaination' element={<Tama_explaination />} />
+        <Route path='/tama-issues' element={<Tama_issues />} />
         {/* ctd */}
-        <Route path='/ctd-image' element={<CTD_images/>} />
-        <Route path='/ctd-explaination' element={<CTD_explaination/>} />
-        <Route path='/ctd-issues' element={<CTD_issues/>} />
+        <Route path='/ctd-image' element={<CTD_images />} />
+        <Route path='/ctd-explaination' element={<CTD_explaination />} />
+        <Route path='/ctd-issues' element={<CTD_issues />} />
         {/* last3 */}
-        <Route path='/tama-label-image' element={<TAMA_label_img/>} />
-        <Route path='/ctd-label-image' element={<CTD_label_img/>} />
-        <Route path='/pencil-draw-image' element={<Pencil_draw_img/>} />
-        <Route path='/circled-spots-image' element={<Circled_spots/>} />
+        <Route path='/tama-label-image' element={<TAMA_label_img />} />
+        <Route path='/ctd-label-image' element={<CTD_label_img />} />
+        <Route path='/pencil-draw-image' element={<Pencil_draw_img />} />
+        <Route path='/circled-spots-image' element={<Circled_spots />} />
       </Routes>
     </Router>
   );
