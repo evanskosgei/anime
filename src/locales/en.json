@@ -168,5 +168,31 @@
   "inaccurateSpotting": "Inaccurate Spotting",
   "irregularApplication": "Irregular Application:",
   "irregularApplicationDescription": "Uneven application of the sample can lead to irregular spots, which may affect the separation process and analysis.",
-  "solutionInaccurateSpotting": "To solve this, apply the sample gently and steadily, maintaining a consistent technique for each spot. Practice proper technique to ensure uniform spots."
+  "solutionInaccurateSpotting": "To solve this, apply the sample gently and steadily, maintaining a consistent technique for each spot. Practice proper technique to ensure uniform spots.",
+  "uvExplaination": "UV Explanation",
+  "whatIsUVLight": "What is UV Light",
+  "uvDescription": "Ultraviolet (UV) light is a type of electromagnetic radiation with a wavelength shorter than visible light but longer than X-rays.",
+  "whyUVUsedInExperiment": "Why Was UV Light Used in This Experiment",
+  "visualizationNonVisibleCompounds": "Visualization of Non-Visible Compounds",
+  "visualizationDescription": "Many compounds are colorless or nearly invisible to the naked eye on a TLC plate. UV light helps to detect these compounds by making them fluoresce (emit light) or appear as dark spots against a glowing background.",
+  "uvAbsorbDescription": "Some compounds naturally absorb UV light, causing them to either fluoresce or block the fluorescence of the silica gel (which is often mixed with a UV-active indicator), making them visible under UV light.",
+  "properSampleApplication": "Ensuring Proper Sample Application",
+  "sampleApplicationDescription": "UV light allows you to confirm that the sample has been properly spotted onto the plate. By checking under UV light before developing the TLC, you can ensure that the spots are visible and well-defined, and that the amount of sample applied is sufficient for the experiment.",
+  "monitoringSpotIntensity": "Monitoring Spot Intensity and Shape",
+  "spotIntensityDescription": "The intensity of fluorescence or the contrast under UV light helps assess how concentrated or diluted a sample is. It can indicate whether the spots are concentrated enough for clear separation.",
+  "spotDiffusionDescription": "Spotting under UV light also helps to detect if the spots are too diffuse, irregular, or merged, which could affect the interpretation of results.",
+
+    "UvIssues": "UV Issues",
+    "expectedIssues": "What are some of the expected Issues",
+    "uvIssuesDescription": "When using UV light in experiments such as Thin-Layer Chromatography (TLC), several issues can arise that may affect the quality of the results or cause safety concerns.",
+    "commonProblems": "Some common problems encountered",
+    "fadingDegradation": "Fading or Degradation of Samples",
+    "fadingDegradationDescription": "Prolonged exposure to UV light can cause some compounds to degrade or lose their fluorescence, especially if they are sensitive to light. This can make it difficult to accurately visualize and analyze the spots.",
+    "nonUVActiveCompounds": "Difficulty in Detecting Non-UV-Active Compounds",
+    "nonUVActiveCompoundsDescription": "Some compounds do not absorb UV light and may not fluoresce or block the fluorescence of the TLC plate. As a result, they will not be visible under UV light, making it difficult to detect them.",
+    "backgroundInterference": "Background Interference",
+    "backgroundInterferenceDescription": "If the TLC plate itself has a fluorescent background (e.g., a silica plate with a fluorescent indicator), the background can sometimes be too bright, making it difficult to distinguish the spots.",
+    "faintWeakSpots": "Faint or Weak Spots",
+    "faintWeakSpotsDescription": "Some samples may not absorb UV light strongly, leading to weak or faint spots that are difficult to detect."
+  
 }

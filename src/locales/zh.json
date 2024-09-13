@@ -166,5 +166,31 @@
     "inaccurateSpotting": "不准确的涂点",
     "irregularApplication": "不规则的涂样:",
     "irregularApplicationDescription": "样品的不均匀施加会导致不规则斑点，这可能会影响分离过程和分析。",
-    "solutionInaccurateSpotting": "为解决此问题，轻柔而稳定地涂样，并保持每次涂点时的一致技术。练习正确的技术以确保斑点均匀。"
+    "solutionInaccurateSpotting": "为解决此问题，轻柔而稳定地涂样，并保持每次涂点时的一致技术。练习正确的技术以确保斑点均匀。",
+    "uvExplaination": "紫外线解释",
+    "whatIsUVLight": "什么是紫外线",
+    "uvDescription": "紫外线（UV）是一种电磁辐射，波长比可见光短，但比X射线长。",
+    "whyUVUsedInExperiment": "为什么在这个实验中使用紫外线",
+    "visualizationNonVisibleCompounds": "可视化不可见化合物",
+    "visualizationDescription": "许多化合物在TLC板上是无色的或肉眼几乎不可见。紫外线有助于通过使这些化合物荧光（发光）或显示为发光背景上的黑点来检测它们。",
+    "uvAbsorbDescription": "一些化合物自然吸收紫外线，使它们荧光或阻挡硅胶的荧光（通常与紫外线活性指示剂混合），使它们在紫外线下可见。",
+    "properSampleApplication": "确保正确的样品应用",
+    "sampleApplicationDescription": "紫外线可以让你确认样品是否已正确涂抹在板上。在开发TLC之前，通过检查紫外线下的样品，你可以确保斑点是可见的、定义清晰的，并且应用的样品量足够。",
+    "monitoringSpotIntensity": "监控斑点强度和形状",
+    "spotIntensityDescription": "在紫外线下的荧光强度或对比度有助于评估样品的浓度或稀释程度。它可以指示斑点是否足够集中以便于清晰分离。",
+    "spotDiffusionDescription": "在紫外线下检查斑点还可以帮助检测斑点是否过于扩散、不规则或融合，这可能会影响结果的解释。",
+
+        "UvIssues": "紫外线问题",
+        "expectedIssues": "预期的一些问题是什么",
+        "uvIssuesDescription": "在薄层色谱（TLC）等实验中使用紫外线时，可能会出现一些问题，这些问题可能影响结果的质量或导致安全隐患。",
+        "commonProblems": "常见问题",
+        "fadingDegradation": "样品褪色或降解",
+        "fadingDegradationDescription": "长时间暴露于紫外线下可能会导致某些化合物降解或失去荧光，尤其是那些对光敏感的化合物。这会使准确可视化和分析斑点变得困难。",
+        "nonUVActiveCompounds": "难以检测非紫外线活性化合物",
+        "nonUVActiveCompoundsDescription": "有些化合物不吸收紫外线，可能不会荧光或阻挡TLC板的荧光。因此，它们在紫外线下不会可见，难以检测。",
+        "backgroundInterference": "背景干扰",
+        "backgroundInterferenceDescription": "如果TLC板本身具有荧光背景（例如，带有荧光指示剂的硅胶板），背景有时会过于明亮，难以区分斑点。",
+        "faintWeakSpots": "斑点微弱",
+        "faintWeakSpotsDescription": "某些样品可能不会强烈吸收紫外线，导致斑点微弱或难以检测。"
+      
 }
