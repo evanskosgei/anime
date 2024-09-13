@@ -25,7 +25,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <a href='/p-explanation'>{t('explanation')}</a>
+                <a href='/pencil-explaination'>{t('explanation')}</a>
               </div>
               <hr />
               <div>
@@ -41,7 +41,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <a href='/s-explanation'>{t('explanation')}</a>
+                <a href='/silica-explaination'>{t('explanation')}</a>
               </div>
               <hr />
               <div>
@@ -58,7 +58,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <a href='/l-explanation'>{t('lineExplanation')}</a>
+                <a href='/line-explaination'>{t('lineExplanation')}</a>
               </div>
             </Tooltip>
             <li className="pl-6 -indent-6">
@@ -75,7 +75,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <a href='/c-explanation'>{t('capillaryTubeExplanation')}</a>
+                <a href='/capillarytube-explanation'>{t('capillaryTubeExplanation')}</a>
               </div>
               <hr />
               <div>
@@ -91,7 +91,7 @@ const Home = () => {
               </div>
               <hr />
               <div>
-                <a href='/uv-explanation'>{t('uvExplanation')}</a>
+                <a href='/uvlight-explaination'>{t('uvExplanation')}</a>
               </div>
               <hr />
               <div>
@@ -107,7 +107,7 @@ const Home = () => {
                   </div>
                   <hr className='mb-2 text-gray-300' />
                   <div className='px-2'>
-                    <a href='/tama-explanation'>{t('tamaExplanation')}</a>
+                    <a href='/tamasolvent-explanation'>{t('tamaExplanation')}</a>
                   </div>
                   <hr className='mb-2 text-gray-300' />
                   <div className='px-2'>
@@ -121,7 +121,7 @@ const Home = () => {
                   </div>
                   <hr className='mb-2 text-gray-300' />
                   <div className='px-2'>
-                    <a href='/ctd-explanation'>{t('ctdExplanation')}</a>
+                    <a href='/ctdsolvent-explaination'>{t('ctdExplanation')}</a>
                   </div>
                   <hr className='mb-2 text-gray-300' />
                   <div className='px-2'>
