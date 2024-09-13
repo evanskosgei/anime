@@ -68,9 +68,6 @@ const Home = () => {
                 <a href='/spotted-images'>Spotted Line Images</a>
               </div>
               <hr />
-              <div>
-                <a href='#'>Spotted Explaination</a>
-              </div>
               <hr />
             </Tooltip>
 
