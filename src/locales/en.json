@@ -193,62 +193,121 @@
   "backgroundInterferenceDescription": "If the TLC plate itself has a fluorescent background (e.g., a silica plate with a fluorescent indicator), the background can sometimes be too bright, making it difficult to distinguish the spots.",
   "faintWeakSpots": "Faint or Weak Spots",
   "faintWeakSpotsDescription": "Some samples may not absorb UV light strongly, leading to weak or faint spots that are difficult to detect.",
-
-
-    "tamaExplaination": "TAMA Explanation",
-    "whatIsTama": "What is TAMA?",
-    "TamaDescription": "TAMA is a solvent system used in Thin-Layer Chromatography (TLC) experiments. It is a specific mixture of four solvents:",
-    "solventsList": ["Toluene", "Acetone", "Methanol", "Ammonia"],
-    "tamaRatio": "The ratio in which these solvents are mixed is typically 45:45:7:3, meaning 45 parts toluene, 45 parts acetone, 7 parts methanol, and 3 parts ammonia.",
-    "purposeOfTama": "Purpose of TAMA in TLC",
-    "tamaPurposeDescription": "TAMA is used as the mobile phase (the solvent system that moves up the TLC plate). Different solvents have varying polarity, and the specific combination in TAMA allows for the separation of compounds based on their polarity and interaction with the silica (stationary phase) and the solvent system (mobile phase).",
-    "rolesOfComponents": "Roles of Each Component",
-    "rolesList": {
-      "toluene": "Toluene: A non-polar solvent, helps dissolve non-polar compounds.",
-      "acetone": "Acetone: A moderately polar solvent, which helps balance the polarity.",
-      "methanol": "Methanol: A polar solvent, increases the solvent's ability to move polar compounds.",
-      "ammonia": "Ammonia: Used to alter the pH, helping in the separation of compounds that are sensitive to pH changes or charged compounds."
+  "tamaExplaination": "TAMA Explanation",
+  "whatIsTama": "What is TAMA?",
+  "TamaDescription": "TAMA is a solvent system used in Thin-Layer Chromatography (TLC) experiments. It is a specific mixture of four solvents:",
+  "solventsList": [
+    "Toluene",
+    "Acetone",
+    "Methanol",
+    "Ammonia"
+  ],
+  "tamaRatio": "The ratio in which these solvents are mixed is typically 45:45:7:3, meaning 45 parts toluene, 45 parts acetone, 7 parts methanol, and 3 parts ammonia.",
+  "purposeOfTama": "Purpose of TAMA in TLC",
+  "tamaPurposeDescription": "TAMA is used as the mobile phase (the solvent system that moves up the TLC plate). Different solvents have varying polarity, and the specific combination in TAMA allows for the separation of compounds based on their polarity and interaction with the silica (stationary phase) and the solvent system (mobile phase).",
+  "rolesOfComponents": "Roles of Each Component",
+  "rolesList": {
+    "toluene": "Toluene: A non-polar solvent, helps dissolve non-polar compounds.",
+    "acetone": "Acetone: A moderately polar solvent, which helps balance the polarity.",
+    "methanol": "Methanol: A polar solvent, increases the solvent's ability to move polar compounds.",
+    "ammonia": "Ammonia: Used to alter the pH, helping in the separation of compounds that are sensitive to pH changes or charged compounds."
   },
-  
+  "TamaIssues": "TAMA Issues",
+  "ExpectedIssues": "What are some of expected Issues",
+  "issuesList": [
+    {
+      "title": "Volatility and Evaporation",
+      "details": [
+        "Toluene, acetone, and methanol are volatile solvents that can evaporate quickly, especially when exposed to open air for prolonged periods. This can change the solvent composition during the experiment, leading to inconsistent results.",
+        "Ensure that the solvent tank is sealed properly to minimize evaporation and maintain the correct solvent ratio."
+      ]
+    },
+    {
+      "title": "Toxicity and Hazardous Fumes",
+      "details": [
+        "All components of TAMA are hazardous to health if inhaled in significant quantities. Toluene and ammonia, in particular, can release harmful fumes that irritate the respiratory system.",
+        "Always perform TLC experiments using TAMA in a well-ventilated area or a fume hood, and wear proper protective equipment, including gloves and goggles."
+      ]
+    },
+    {
+      "title": "pH Sensitivity",
+      "details": [
+        "Ammonia Alters pH: Ammonia increases the pH of the solvent mixture, which may affect the separation of pH-sensitive compounds. For compounds that are sensitive to changes in pH, the use of ammonia could lead to poor separation or spot distortion.",
+        "If pH sensitivity is a concern, an alternative solvent system without ammonia or with a buffered pH may be required."
+      ]
+    },
+    {
+      "title": "Solvent Imbalance",
+      "details": [
+        "Since TAMA is a specific mixture of four solvents in a fixed ratio, even slight deviations from this ratio can significantly affect the results of the TLC experiment. Unequal amounts or improper mixing can lead to inconsistent solvent flow or improper separation of compounds.",
+        "Ensure precise measurement and thorough mixing of the solvents to maintain the exact 45:45:7:3 ratio for optimal results."
+      ]
+    },
+    {
+      "title": "Solvent System Saturation",
+      "details": [
+        "If the TAMA solvent is not properly saturated in the development tank (i.e., the tank is not equilibrated before placing the TLC plate), the separation may be uneven or incomplete.",
+        "Allow the development tank to equilibrate with the solvent vapor for at least 20–30 minutes before placing the TLC plate inside to ensure consistent flow."
+      ]
+    }
+  ],
+  "ctdExplaination": "CTD Explanation",
+  "whatIsCTD": "What is CTD?",
+  "CtdDescription": "CTD refers to a solvent system made up of the following components:",
+  "ctdComponents": [
+    "Cyclohexamine",
+    "Toluene",
+    "Diethylamine"
+  ],
+  "ctdRatio": "The typical ratio of this solvent mixture in your experiment is 75:15:10 (75 parts cyclohexamine, 15 parts toluene, and 10 parts diethylamine). This solvent system, like TAMA, is used in Thin-Layer Chromatography (TLC) to help separate and visualize different compounds based on their chemical properties.",
+  "purposeOfCTD": "Purpose of CTD in TLC",
+  "ctdPurpose": "In TLC, the CTD solvent system is used as the mobile phase, which moves up the TLC plate, carrying the compounds you applied on the silica plate. The effectiveness of the separation depends on how well the compounds dissolve in the solvent system and their interaction with the stationary phase (the silica on the TLC plate).",
+  "ctdRoles": [
+    {
+      "title": "Cyclohexamine",
+      "description": "This is a non-polar amine, which can interact with compounds having basic functional groups."
+    },
+    {
+      "title": "Toluene",
+      "description": "A non-polar organic solvent that helps dissolve non-polar substances and provides a medium for separation."
+    },
+    {
+      "title": "Diethylamine",
+      "description": "This is a non-polar amine, which can interact with compounds having basic functional groups."
+    }
+  ],
+  "ctdBalance": "The combination of these solvents in CTD provides a balance of polarity that helps achieve separation of compounds that might have different chemical properties.",
 
-    "TamaIssues": "TAMA Issues",
-    "ExpectedIssues": "What are some of expected Issues",
-    "issuesList": [
-      {
-        "title": "Volatility and Evaporation",
-        "details": [
-          "Toluene, acetone, and methanol are volatile solvents that can evaporate quickly, especially when exposed to open air for prolonged periods. This can change the solvent composition during the experiment, leading to inconsistent results.",
-          "Ensure that the solvent tank is sealed properly to minimize evaporation and maintain the correct solvent ratio."
-        ]
-      },
-      {
-        "title": "Toxicity and Hazardous Fumes",
-        "details": [
-          "All components of TAMA are hazardous to health if inhaled in significant quantities. Toluene and ammonia, in particular, can release harmful fumes that irritate the respiratory system.",
-          "Always perform TLC experiments using TAMA in a well-ventilated area or a fume hood, and wear proper protective equipment, including gloves and goggles."
-        ]
-      },
-      {
-        "title": "pH Sensitivity",
-        "details": [
-          "Ammonia Alters pH: Ammonia increases the pH of the solvent mixture, which may affect the separation of pH-sensitive compounds. For compounds that are sensitive to changes in pH, the use of ammonia could lead to poor separation or spot distortion.",
-          "If pH sensitivity is a concern, an alternative solvent system without ammonia or with a buffered pH may be required."
-        ]
-      },
-      {
-        "title": "Solvent Imbalance",
-        "details": [
-          "Since TAMA is a specific mixture of four solvents in a fixed ratio, even slight deviations from this ratio can significantly affect the results of the TLC experiment. Unequal amounts or improper mixing can lead to inconsistent solvent flow or improper separation of compounds.",
-          "Ensure precise measurement and thorough mixing of the solvents to maintain the exact 45:45:7:3 ratio for optimal results."
-        ]
-      },
-      {
-        "title": "Solvent System Saturation",
-        "details": [
-          "If the TAMA solvent is not properly saturated in the development tank (i.e., the tank is not equilibrated before placing the TLC plate), the separation may be uneven or incomplete.",
-          "Allow the development tank to equilibrate with the solvent vapor for at least 20–30 minutes before placing the TLC plate inside to ensure consistent flow."
-        ]
-      }
+
+    "CtdIssues": "CTD Issues",
+    "EexpectedIssues": "What are some of expected Issues",
+    "CctdDescription": "When using the CTD (Cyclohexamine:Toluene) solvent system in Thin-Layer Chromatography (TLC) experiments, several issues can arise, including handling difficulties and challenges related to solvent interactions with the sample.",
+    "volatilityAndEvaporation": "Volatility and Evaporation",
+    "volatilityPoints": [
+      "Cyclohexamine, Toluene, and Diethylamine are all volatile compounds. This means they can evaporate quickly, especially in an open environment, which can lead to:",
+      "Changing Solvent Ratios: If the solvent evaporates unevenly, the original 75:15:10 ratio of cyclohexamine, toluene, and diethylamine can shift, causing inconsistent results.",
+      "Decreased Solvent Effectiveness: The solvent may lose its ability to separate compounds properly if its composition is altered due to evaporation.",
+      "Solution: Use a tightly sealed development tank and perform the experiment in a controlled environment to minimize evaporation."
+    ],
+    "toxicityAndFumes": "Toxicity and Hazardous Fumes",
+    "toxicityPoints": [
+      "Cyclohexamine and Diethylamine are toxic, and toluene is hazardous as well. Inhalation of the vapors can cause:",
+      "Respiratory Irritation: Prolonged exposure to these solvents can cause health issues like headaches, nausea, or lung irritation.",
+      "Environmental Hazards: These solvents are harmful to the environment and require proper disposal.",
+      "Always conduct experiments involving CTD in a fume hood to avoid inhaling the fumes and use appropriate personal protective equipment (PPE) such as gloves and safety goggles."
+    ],
+    "phAndCompoundSensitivity": "pH and Compound Sensitivity",
+    "phSensitivityPoints": [
+      "Diethylamine is a weak base and can alter the pH of the solvent system.",
+      "Decomposition of Analytes: Certain compounds may degrade or react in the presence of a base, leading to poor separation or loss of analytes.",
+      "Altered Separation: If a compound changes its ionization state due to the basic nature of diethylamine, it might interact differently with the stationary phase, resulting in poor or incomplete separation.",
+      "For pH-sensitive compounds, consider using an alternative solvent system or buffer the solvent to maintain a neutral pH."
+    ],
+    "nonUniversalApplication": "Non-Universal Application",
+    "nonUniversalPoints": [
+      "Highly Polar or Ionic Compounds: The non-polar nature of toluene may cause poor separation for highly polar compounds, which may remain stuck near the baseline.",
+      "Inadequate Solubility: If the compounds are not sufficiently soluble in the CTD system, they may not travel properly on the TLC plate, resulting in unclear or smudged spots.",
+      "If separation is inadequate, consider adjusting the ratio of the solvents or switch to a different solvent system that better suits the polarity of your analytes."
     ]
   
 }
