@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { MoveLeft } from 'lucide-react';
-import uv_1 from "../assets/uv/uv1.jpeg"
-import uv_2 from "../assets/uv/uv2.jpeg"
+// import uv_1 from "../assets/uv/uv1.jpeg"
+// import uv_2 from "../assets/uv/uv2.jpeg"
 import uv_5 from "../assets/uv/uv5.mp4"
 import uv_6 from "../assets/uv/uv6.mp4"
 import Zoom_img from '../components/zoom';
@@ -11,10 +11,10 @@ const Uv_images = () => {
   const [openZoom, setOpenZoom] = useState(false);
   const [currentMedia, setCurrentMedia] = useState(null);
 
-  const images = [
-    { src: uv_1, alt: "UV image 1", type: "image" },
-    { src: uv_2, alt: "UV image 2", type: "image" },
-  ];
+  // const images = [
+  //   { src: uv_1, alt: "UV image 1", type: "image" },
+  //   { src: uv_2, alt: "UV image 2", type: "image" },
+  // ];
 
   const videos = [
     { src: uv_5, title: "UV video 1" },
@@ -54,7 +54,7 @@ const Uv_images = () => {
                 </video>
               </div>
             ))}
-            {images.map((image, index) => (
+            {/* {images.map((image, index) => (
               <div key={index}>
                 <button 
                   onClick={() => handleImageClick(image)}
@@ -67,7 +67,7 @@ const Uv_images = () => {
                   />
                 </button>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

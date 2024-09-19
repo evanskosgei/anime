@@ -7,6 +7,8 @@ import line_6 from "../assets/line/line6.jpeg"
 import line_7 from "../assets/line/line7.jpeg"
 import uv_3 from "../assets/uv/uv3.jpeg"
 import uv_4 from "../assets/uv/uv4.jpeg"
+import uv_1 from "../assets/uv/uv1.jpeg"
+import uv_2 from "../assets/uv/uv2.jpeg"
 import Zoom_img from '../components/zoom';
 
 const Spotted_img = () => {
@@ -20,6 +22,8 @@ const Spotted_img = () => {
         { src: line_7, alt: "Line image 7" },
         { src: uv_3, alt: "Line image 8" },
         { src: uv_4, alt: "Line image 8" },
+        { src: uv_1, alt: "Line image 9" },
+        { src: uv_2, alt: "Line image 10" },
     ];
     const handleImageClick = (image) => {
         setCurrentImage(image);
